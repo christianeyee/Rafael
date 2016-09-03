@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Rafael</string>
+
+    <string name="route">i\'m going out today!</string>
+    <string name="call">talk to me</string>
+    <string name="buddies">my buddies</string>
+    <string name="tip">safety tips</string>
+
+    <string name="maps_url">https://www.google.com/maps/embed/v1/directions?</string>
+    <string name="maps_key">AIzaSyBU7_3nFQwVp1LzFKFB34I4c7Yiap-hnXU&amp;</string>
+
+    <string name="chikka_url">https://post.chikka.com/smsapi/request</string>
+    <string name="shortcode">2929090403</string>
+    <string name="chikka_id">7366a46adbb03e383e3f4d7efc11b65d36ea38e7a376b04f19a268e1edebdcaa</string>
+    <string name="chikka_key">04ef8c03e6ad5a29e15ef81818d5f9efb943b953a850be17b8d56b193942275e</string>
+    <string name="mobile">639258941105</string>
+
+    <string name="firebase_url">https://rafael-142213.firebaseio.com/</string>
+
+    <string name="sp_destination_id">sp_destination_id</string>
+    <string name="sp_duration_id">sp_duration_id</string>
+    <string name="sp_interval_id">sp_interval_id</string>
+
+    <string name="location_extra">location_extra</string>
+    <string name="location_default">Bonifacio High Street, Taguig</string>
+</resources>

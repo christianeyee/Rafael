@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "65637739378",
+    "firebase_url": "https://rafael-142213.firebaseio.com",
+    "project_id": "rafael-142213",
+    "storage_bucket": "rafael-142213.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65637739378:android:8ca9c718f5a3561e",
+        "android_client_info": {
+          "package_name": "com.wy.rafael"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65637739378-aipltlaicgco3khl12098gjovad7epmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRSvIh6teZQphpANAPz752kl18Mg6tp9o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

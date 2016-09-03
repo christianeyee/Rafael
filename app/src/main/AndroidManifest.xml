@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wy.rafael">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.RouteSlidePagerActivity" />
+        <activity android:name=".activities.BuddiesActivity" />
+        <activity android:name=".activities.CallActivity" />
+        <activity android:name=".activities.CreateBuddyActivity" />
+        <activity android:name=".activities.TipSlidePagerActivity"></activity>
+        <service
+            android:name=".services.SmsService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

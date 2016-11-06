@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import com.wy.rafael.R;
 import com.wy.rafael.activities.RouteSlidePagerActivity;
 import com.wy.rafael.adapters.BuddyAdapter;
-import com.wy.rafael.models.Buddy;
 
 public class BuddiesFragment extends Fragment implements RouteSlidePagerActivity.FragmentLifecycle {
 
@@ -29,7 +28,7 @@ public class BuddiesFragment extends Fragment implements RouteSlidePagerActivity
 
     private void setUpRecyclerView(ViewGroup view) {
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.chooseBuddiesRecyclerView);
-        adapter = new BuddyAdapter(getActivity(), Buddy.getData());
+        adapter = new BuddyAdapter(getActivity(), null);
         recyclerView.setAdapter(adapter);
 
         LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(getActivity());

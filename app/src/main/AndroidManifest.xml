@@ -2,14 +2,31 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wy.rafael">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyA59YxYfrUtZxklTpPD5yLzV7Gv2HQPhYo"/>
+
+    <!-- Network connectivity permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo"
-        android:supportsRtl="true"
-        android:largeHeap="true"
         android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:largeHeap="true"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -23,12 +40,15 @@
         <activity android:name=".activities.RouteSlidePagerActivity" />
         <activity android:name=".activities.BuddiesActivity" />
         <activity android:name=".activities.CallActivity" />
-        <activity android:name=".activities.CreateBuddyActivity" />
-        <activity android:name=".activities.TipSlidePagerActivity"></activity>
+        <activity android:name=".activities.TipSlidePagerActivity" />
+
         <service
             android:name=".services.SmsService"
             android:enabled="true"
             android:exported="true" />
+
+        <activity android:name=".activities.LoginActivity"></activity>
+
     </application>
 
 </manifest>

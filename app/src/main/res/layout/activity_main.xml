@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_centerHorizontal="true"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.wy.rafael.MainActivity">
 
     <include
@@ -15,7 +13,6 @@
 
     <ImageView
         android:id="@+id/header"
-        android:src="@drawable/logo2"
         android:layout_width="58dp"
         android:layout_height="84dp"
         android:layout_centerHorizontal="true"
@@ -58,15 +55,5 @@
         android:textColor="#FFFFFF"
         android:layout_below="@id/buddies_button"
         android:text="@string/tip"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
-    </LinearLayout>
-
 
 </RelativeLayout>

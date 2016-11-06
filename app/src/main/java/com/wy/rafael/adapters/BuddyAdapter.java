@@ -86,13 +86,11 @@ public class BuddyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             super(itemView);
             this.name = (TextView) itemView.findViewById(R.id.name);
             this.mobile = (TextView) itemView.findViewById(R.id.mobile);
-            this.img = (ImageView) itemView.findViewById(R.id.img);
         }
 
         public void setData(Buddy current, int position) {
             this.name.setText(current.getName());
             this.mobile.setText(current.getMobile());
-            this.img.setImageResource(current.getImgId());
             this.position = position;
             this.current = current;
         }
